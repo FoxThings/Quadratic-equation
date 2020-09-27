@@ -1,0 +1,78 @@
+\hypertarget{equat_8h}{}\doxysection{equat.\+h File Reference}
+\label{equat_8h}\index{equat.h@{equat.h}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{equat_8h_a34f6126547cfdaeca6fb82d45a97692a}\label{equat_8h_a34f6126547cfdaeca6fb82d45a97692a}} 
+enum {\bfseries Roots} \{ {\bfseries I\+N\+F\+\_\+\+R\+O\+O\+TS} = -\/1, 
+{\bfseries N\+O\+\_\+\+R\+O\+O\+TS} = 0
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{equat_8h_aabdbded21dd5167eb7d256347ef9f6a7}{line\+Equat}} (double k, double l, double $\ast$x)
+\item 
+int \mbox{\hyperlink{equat_8h_a84cfcbef628debab262acb7ba5cdaa04}{square\+Equat}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{equat_8h_aabdbded21dd5167eb7d256347ef9f6a7}\label{equat_8h_aabdbded21dd5167eb7d256347ef9f6a7}} 
+\index{equat.h@{equat.h}!lineEquat@{lineEquat}}
+\index{lineEquat@{lineEquat}!equat.h@{equat.h}}
+\doxysubsubsection{\texorpdfstring{lineEquat()}{lineEquat()}}
+{\footnotesize\ttfamily int line\+Equat (\begin{DoxyParamCaption}\item[{double}]{k,  }\item[{double}]{l,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+Calculate simple linear equations! 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em k} & angular coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & shift \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & root of equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Authors}
+Zvezdin Nikita 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+Don\textquotesingle{}t off the asserts 
+\end{DoxyWarning}
+\mbox{\Hypertarget{equat_8h_a84cfcbef628debab262acb7ba5cdaa04}\label{equat_8h_a84cfcbef628debab262acb7ba5cdaa04}} 
+\index{equat.h@{equat.h}!squareEquat@{squareEquat}}
+\index{squareEquat@{squareEquat}!equat.h@{equat.h}}
+\doxysubsubsection{\texorpdfstring{squareEquat()}{squareEquat()}}
+{\footnotesize\ttfamily int square\+Equat (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Calculate square equations! 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & first coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & second coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & free coefficient \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & first root of equation \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & second root of equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Authors}
+Zvezdin Nikita 
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+Don\textquotesingle{}t off the asserts 
+\end{DoxyWarning}
