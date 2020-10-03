@@ -2,8 +2,11 @@
 #include <math.h>
 #include "equat.h"
 
+// #include "tests.h" use it if you want to get tests lib
+
 int main()
 {
+    // tests(); invoke unit-tests
 
     printf("-> Square equations calculator!\n");
     printf("-> Zvezdin Nikita 2020, all rights reserved(C)\n\n");
