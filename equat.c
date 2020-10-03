@@ -66,8 +66,8 @@ int squareEquat(double a, double b, double c, double *x1, double *x2)
     }
 
     double rootDis = sqrt(d);
-    *x1 = (-b + rootDis) / 2 * a;
-    *x2 = (-b - rootDis) / 2 * a;
+    *x1 = (-b + rootDis) / (2 * a);
+    *x2 = (-b - rootDis) / (2 * a);
     return 2;
 }
 
