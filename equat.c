@@ -8,30 +8,33 @@ const double EPSILON = 0.000001d;
 
 bool isZero(double d)
 {
+    assert(!isinf(d));
+    assert(!isnan(d));
+
     if (fabs(d) < EPSILON)
         return true;
     return false;
 }
 
-int lineEquat(double k, double l, double *x)
+int lineEquat(double k, double b, double *x)
 {
     assert(!isinf(k));
-    assert(!isinf(l));
+    assert(!isinf(b));
 
     assert(!isnan(k));
-    assert(!isnan(l));
+    assert(!isnan(b));
 
     assert(x != NULL);
 
     if (k == 0)
     {
-        if (l == 0)
+        if (b == 0)
             return INF_ROOTS;
         else
             return NO_ROOTS;
     }
 
-    *x = -l / k;
+    *x = -b / k;
     return 1;
 }
 
