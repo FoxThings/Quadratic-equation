@@ -32,9 +32,9 @@ void unitTest(int testNum, double a, double b, double c, int out, double _x1, do
 {
     double x1 = NAN, x2 = NAN;
     int numRoots = squareEquat(a, b, c, &x1, &x2);
-    if (numRoots != out || ( x1 != _x1 && !isnan(x1) && !isnan(_x1) ) || ( x2 != _x2 && !isnan(x2) && !isnan(_x2)) )
+    if (numRoots != out || ( x1 != _x1 && !isnan(x1) && !isnan(_x1) ) || ( x2 != _x2 && !isnan(x2) && !isnan(_x2)) || (isnan(x2) != isnan(_x2)) || (isnan(x1) != isnan(_x1)) )
         printf("#%d There is mistake! numRoots = %d x1 = %lg x2 = %lg instead numRoots = %d x1 = %lg x2 = %lg\n",
-            testNum,                  out,         _x1,     _x2,              numRoots,     x1,      x2        );
+                testNum,              out,         _x1,     _x2,              numRoots,     x1,      x2        );
     else
         printf("#%d OK\n", testNum);
 
