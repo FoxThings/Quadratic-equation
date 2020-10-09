@@ -29,7 +29,7 @@ int main()
         printf("Sorry, something wrong. Please, try again!\n");
         printf("[a]x^2 + [b]x + [c] = 0\n");
         printf("Please, enter (a, b and c): ");
-        fflush(stdin);
+        scanf("%*[^\n]%*ñ"); // Flushing standard input buffer
     }
 
     double x1 = NAN, x2 = NAN;
